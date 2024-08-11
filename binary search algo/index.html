@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary-Search-DSA-javaScript</title>
+</head>
+<body>
+    <h1>binary Search</h1>
+    <h3>points to remember</h3>
+    <ul>
+        <li>It always works on Sorted array</li>
+        <li>time complexity is of O(log(n))</li>
+    </ul>
+
+    <h3>steps</h3>
+    <ol>
+        <li>find the middle of the array(mid)</li>
+        <li>check if mid is equal to key</li>
+        <ol>
+            <li>if yes - return mid</li>
+            <li>if no - update mid</li>
+            <ol>
+                <li>if element in 'mid' position is less than key - start index = mid + 1</li>
+                <li>if element in 'mid' position is greater than key - last index = mid - 1</li>
+            </ol>
+        </ol>
+        <li> repeat step 2 untill u find the key</li>
+        <li>if no key found - key does not exist the array</li>
+    </ol>
+
+    <h3>optimization</h3>
+    <p>
+        as well know the max value of interger is 2^31 - 1.<br>
+        if, start = 2^31 - 1 <br>
+        end = 2^31 - 1 <br>
+        mid = (start + end)/2 <br>
+        (start + end) will be more than 2^31 - 1 <br>
+        this will cause major issue <br>
+        <br>
+        to slove this edge case, lets do this <br>
+        mid = start + (end - start)/2 <br>
+        which is same as (start + end) / 2
+    </p>
+    
+
+    <script src="script.js" ></script>
+</body>
+</html>
