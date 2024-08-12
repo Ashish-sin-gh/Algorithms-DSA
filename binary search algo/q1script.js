@@ -43,4 +43,4 @@ function lastOcc(arr,key){
     return ans;
 }
 
-console.log(`first occurence is: ${firstOcc([4,5,6,6,6,8],6)}\nlast occurence is: ${lastOcc([4,5,6,6,6,8],6)}`);
+console.log(`first occurence is: ${firstOcc([4,5,6,6,6,6,6,6,6,8],6)}\nlast occurence is: ${lastOcc([4,5,6,6,6,6,6,6,6,8],6)}`);
