@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pattern-hard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div>
+            <h1>pattern code:</h1>
+    <pre>
+    let n = 5;
+    let i = 1;
+
+    while(i<=n){
+    let char = '';
+    
+    //print num1
+    let j = 1;
+    while(j <= n-i+1){
+        char = char + j + "  ";
+        j++;
+    }
+    
+    //print t1
+    let star = i-1;
+    while(star){
+        char= char + "*  ";
+        star--;
+    }
+
+    //print t2
+    let star2 = i-1;
+    while(star2){
+        char= char + "*  ";
+        star2--;
+    }
+
+    //print num2
+    j = 1;
+    let num2 = n-i+1;
+    while(j <= n-i+1){
+        char = char + num2 + "  ";
+        j++;
+        num2--;
+    }
+    
+    i++;
+    console.log(char);
+    }
+    </pre>
+        </div>
+    
+
+        <div>
+            <h1>enter the number:</h1>
+            <input type="number" id="inputNumber" placeholder="positive number" name="input" min="1">
+            <button id="buttonOP">output</button>
+            <h1>pattern output:</h1>
+
+            <pre id="op">
+
+            </pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
