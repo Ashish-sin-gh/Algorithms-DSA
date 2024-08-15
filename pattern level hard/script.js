@@ -47,5 +47,5 @@ return fullPattern;
 document.getElementById("buttonOP").addEventListener("click",()=>{
     const inputVal = parseInt(document.getElementById("inputNumber").value);
     const patternIs = pattern(inputVal);
-    op.textContent = patternIs;
+    displayOP.textContent = patternIs;
 });

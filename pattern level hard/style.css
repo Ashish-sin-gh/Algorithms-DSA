@@ -3,9 +3,10 @@ pre {
     padding: 10px;
     border: 1px solid #ccc;
     width: fit-content;
+    /* font-size: 20px; */
 }
 
-#main{
+#main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
